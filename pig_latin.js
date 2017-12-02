@@ -6,6 +6,5 @@ const pigIt = str => str.split(' ').reduce((str, substring) => {
    let _move1CharToEndOfStr = _moveNCharsToEndOfStr(1),
        _appendAyToEndOfStr = _appendStr('ay');
 
-   str += _appendAyToEndOfStr(_move1CharToEndOfStr(substring)) + ' ';
-   return str;
+   return str + _appendAyToEndOfStr(_move1CharToEndOfStr(substring)) + ' ';
 }, '').slice(0, -1);
